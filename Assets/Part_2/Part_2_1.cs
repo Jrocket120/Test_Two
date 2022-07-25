@@ -11,7 +11,21 @@ public class Part_2_1 : MonoBehaviour
     {
         int[] array = new int[10] { 22, 58, 7, 91, 23, 354, 1, 2, 40, 12 };
         List<int> list = new List<int>();
+        foreach(int i in array)
+        {
+            if (i % 2 == 0 && i <30)
+            {
+                list.Add(i);
 
+            }
+            
+        }
+        foreach(int i in list)
+        {
+            print(i);
+        }
+            
+        
        
     }
 
