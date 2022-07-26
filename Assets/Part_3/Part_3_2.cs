@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Part_3_2 : MonoBehaviour
 {
+    public GameObject sphere;
+    public GameObject cube;
+    public GameObject cylinder;
+    
     //Attach this Script to Part_3_Cube
     void Start()
     {
@@ -15,17 +19,24 @@ public class Part_3_2 : MonoBehaviour
         //and use PrintOutNameAndPosition (1pt)
 
 
-        PrintOutNameAndPosition("Part_3_Cube", new Vector3(0, 0, 0));
-        GameObject.Find("Part_3_Sphere").GetComponent<Transform>();
-      
-        
-        
-    //Prints out the name and the position of the variables
-    void PrintOutNameAndPosition(string name, Vector3 pos) {
+       PrintOutNameAndPosition("Cube", new Vector3(0, 0, 0));
+
+       GameObject.Find("Sphere").GetComponent<Transform>();
+       PrintOutNameAndPosition("Sphere", new Vector3(10, 2, -3));
+       Transform trans=transform.Find("Cylinder").GetComponent<Transform>();
+       PrintOutNameAndPosition("Cylinder", new Vector3(-10, 2, 4));
+
+
+
+        //Prints out the name and the position of the variables
+
+        void PrintOutNameAndPosition(string name, Vector3 pos) {
+    
 
 
             print(name + " " + pos);
         }
+     
     }
 
 }
