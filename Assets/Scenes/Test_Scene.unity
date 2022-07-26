@@ -135,8 +135,9 @@ GameObject:
   - component: {fileID: 409410998}
   - component: {fileID: 409410997}
   - component: {fileID: 409410996}
+  - component: {fileID: 409411000}
   m_Layer: 0
-  m_Name: Part_3_Sphere
+  m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,6 +222,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &409411000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409410995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613eddedbe8e791488c86977081f7743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphere: {fileID: 0}
+  cube: {fileID: 0}
+  cylinder: {fileID: 0}
 --- !u!1 &549774012
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +250,7 @@ GameObject:
   - component: {fileID: 549774015}
   - component: {fileID: 549774014}
   m_Layer: 0
-  m_Name: Part_3_Cylinder
+  m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -509,8 +525,9 @@ GameObject:
   - component: {fileID: 1321489357}
   - component: {fileID: 1321489356}
   - component: {fileID: 1321489359}
+  - component: {fileID: 1321489360}
   m_Layer: 0
-  m_Name: Part_3_Cube
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,3 +610,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2850de4ec17c83349b1ff3a97dfa668e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1321489360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321489353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613eddedbe8e791488c86977081f7743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphere: {fileID: 0}
+  cube: {fileID: 0}
+  cylinder: {fileID: 0}
